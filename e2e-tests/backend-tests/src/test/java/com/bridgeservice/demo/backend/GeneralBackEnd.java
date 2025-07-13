@@ -81,4 +81,15 @@ public class GeneralBackEnd {
                 Matchers.equalTo(commentator));
     }
 
+    // incorrect test case
+    @Test
+    public void testUpVoteWithIncorrectExpectation() {
+        Map article = MyBlogBackEnd.fetchArticle(STD_URL, "learn-swedish");
+        int currentUpvote = Integer.parseInt(article.get("upvotes").toString());
+
+        int newValue = MyBlogBackEnd.upVoteArticle(STD_URL, "learn-swedish");
+        // This will fail because we expect the upvote count to remain the same, but it actually increments
+        assertThat("This test should fail because upvote should increment", newValue,
+                Matchers.equalTo(currentUpvote));
+    }
 }
