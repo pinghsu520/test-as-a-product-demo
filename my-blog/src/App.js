@@ -29,6 +29,7 @@ function App() {
             <Route path='/articles' element={<ArticlesListPage />}/>
             <Route path='/articles/:articleId' element={<ArticlePage />}/>
             <Route path='*' element={<NotFoundPage/>}/>
+            {/* add a new route called Adobe Firefly */}
           </Routes>
         </div>
       </div>
