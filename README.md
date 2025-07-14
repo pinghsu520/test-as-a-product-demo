@@ -5,7 +5,7 @@ We have the following parts:
 * **my-blog** : A ReactJS project.
 * **my-blog-backend** : A nodeJS-based micro-service.
 * **e2e-tests/backend-tests** : A Java Project dedicated to testing the my-blog-backend apis.
-* **e2e-tests/frontend-tests/fe-tests-cypress** : A cypress project dedicated to testing the front-end.
+
 
 ![System Design](./diagrams/system-System.drawio.png)
 
